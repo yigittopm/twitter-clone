@@ -1,0 +1,11 @@
+.navigation {
+  margin-left: 30%;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation button {
+  width: 60%;
+}

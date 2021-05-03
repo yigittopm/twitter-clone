@@ -1,0 +1,10 @@
+.search {
+  width: 60%;
+  background: #3b3e416d;
+  border: none;
+  border-radius: 30px;
+}
+
+.search:focus {
+  background: #3b3e416d;
+}

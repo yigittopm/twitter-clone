@@ -1,0 +1,30 @@
+.newTweet {
+  position: relative;
+}
+
+.newTweet_input {
+  background: #3b3e416d;
+  border: none;
+  height: 80px;
+  width: 100%;
+  border-radius: 20px;
+}
+.newTweet_input:focus {
+  background: #3b3e416d;
+}
+
+.newTweet_btn {
+  width: 30%;
+  float: right;
+}
+
+.pp {
+  width: auto;
+  height: 70px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.img_input_div {
+  display: flex;
+}
