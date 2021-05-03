@@ -1,9 +1,15 @@
 import Navigation from "./components/Navigation";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
-import Discover from "./components/Discovery";
+import Discovery from "./components/Discovery";
 
 import HomePage from "./pages/HomePage";
+import DiscoveryPage from "./pages/DiscoveryPage";
+import ListsPage from "./pages/ListsPage";
+import LocationPage from "./pages/LocationPage";
+import NotificationPage from "./pages/NotificationPage";
+import OtherPage from "./pages/OtherPage";
+import ProfilePage from "./pages/ProfilePage";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
@@ -17,12 +23,18 @@ export default function App() {
         <div className="col-md-6">
           <Header />
           <Switch>
-            <HomePage />
+            <Route exact path="/" component={HomePage}/>
+            <Route exact path="/discovery" component={DiscoveryPage}/>
+            <Route exact path="/notification" component={NotificationPage}/>
+            <Route exact path="/location" component={LocationPage}/>
+            <Route exact path="/lists" component={ListsPage}/>
+            <Route exact path="/profile" component={ProfilePage}/>
+            <Route exact path="/other" component={OtherPage}/>
           </Switch>
         </div>
         <div className="col-md-3">
           <SearchBar />
-          <Discover />
+          <Discovery />
         </div>
       </BrowserRouter>
     </div>

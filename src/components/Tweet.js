@@ -1,5 +1,10 @@
 import "../styles/tweet.css";
 
-export default function Tweet({ tweet }) {
-  return <li className="list-group-item tweet">{tweet}</li>;
+export default function Tweet({ tweet,username }) {
+  return (
+    <div className="list-group-item tweet">
+      <h6 className="tweet-item">@{username}</h6>
+      <p className="tweet-item">{tweet}</p>
+    </div>
+  )
 }

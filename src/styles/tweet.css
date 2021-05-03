@@ -1,3 +1,15 @@
 .tweet {
   background: #282d336d;
+  border-radius: 10px;
+  float: right;
+  height: 100px;
 }
+
+.tweet:hover{
+  background: #2124276d;
+}
+
+.tweet-item{
+  background: none;
+}
+

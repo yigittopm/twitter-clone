@@ -1,0 +1,18 @@
+.tweet_div{
+    position: relative;
+}
+
+.tweet_pp_div{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+
+.tweet_pp{
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+  

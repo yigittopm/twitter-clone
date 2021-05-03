@@ -2,6 +2,7 @@ import NewTweet from "../components/NewTweet";
 import Tweet from "../components/Tweet";
 import "../styles.css";
 import "../styles/tweets.css";
+import img from "../img/pp.png";
 
 const db = [
   {
@@ -42,11 +43,15 @@ const db = [
 
 function HomePage() {
   return (
-    <div>
+    <div className="tweet_div">
       <NewTweet />
-      <ul className="list-group tweets">
+      <ul className="list-group tweets_ul">
         {db.map((item) => (
-          <Tweet key={item.username} tweet={item.tweets} />
+          <div className="tweet_pp_div" key={item.username}>
+            <img className="tweet_pp" src={img}/>
+            <Tweet username={item.username} tweet={item.tweets} />
+          </div>
+          
         ))}
       </ul>
     </div>

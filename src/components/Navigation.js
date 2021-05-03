@@ -1,32 +1,41 @@
 import "../styles/navigation.css";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <div className="navigation">
       <i class="fab fa-twitter big"></i>
       <hr />
-      <a href="#">
+
+      <Link to="/">
         <i class="fas fa-home"></i>
         <h2>Home</h2>
-      </a>
-      <a href="#">
+      </Link>
+
+      <Link to="/discovery">
         <h2>Discovery</h2>
-      </a>
-      <a href="#">
+      </Link >
+
+      <Link to="/notification">
         <h2>Notification</h2>
-      </a>
-      <a href="#">
+      </Link >
+
+      <Link to="/location">
         <h2>Location</h2>
-      </a>
-      <a href="#">
+      </Link >
+
+      <Link to="/lists">
         <h2>Lists</h2>
-      </a>
-      <a href="#">
+      </Link >
+
+      <Link to="/profile">
         <h2>Profile</h2>
-      </a>
-      <a href="#">
+      </Link>
+
+      <Link to="/other">
         <h2>..Other</h2>
-      </a>
+      </Link >
+
       <button className="btn tw_btn">Tweetle</button>
     </div>
   );
