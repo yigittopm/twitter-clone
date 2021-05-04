@@ -6,6 +6,8 @@ const PORT = process.env.PORT;
 const rootRouter = require('./routes/index');
 const sequelize = require("./helpers/database");
 const User = require("./models/User");
+const Tweet = require("./models/Tweet");
+
 
 app.use(express.json());
 app.use(cors());
