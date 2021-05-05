@@ -1,11 +1,8 @@
-const User = require("../models/User");
+const pool = require("../helpers/database");
 
 const login = async (req, res, next) => {
-    const { username, password } = req.body;
-    const logged = await User.findAll()
-    res.json({
-        logged
-    })
+    const data = await pool.query("SELECT * FROM users;")
+    res.json(data.rows)
 }
 
 module.exports = {

@@ -4,15 +4,16 @@ const sequelize = require("../helpers/database");
 const Tweet = sequelize.define("Tweet",{
     id:{
         type: Sequelize.INTEGER,
+        primaryKey: true,
         autoIncrement: true,
-        allowNull: false,
-        primaryKey: true
     },
     user_id:{
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: false
     },
     text:{
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
+        allowNull:false
     }
 })
 

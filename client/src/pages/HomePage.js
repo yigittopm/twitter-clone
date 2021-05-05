@@ -4,6 +4,9 @@ import "../styles.css";
 import "../styles/tweets.css";
 import img from "../img/pp.png";
 
+import axios from "axios";
+import { useState,useEffect } from "react";
+
 const db = [
   {
     username: "merdo",
@@ -42,16 +45,24 @@ const db = [
 ];
 
 function HomePage() {
+  const [data, setData] = useState([]);
+  
+  useEffect(() => {
+    const data = axios.get("http://localhost:5000/home")
+      .then(result => setData(result.data))
+  },[]);
+
+  console.log(data)
+
   return (
     <div className="tweet_div">
       <NewTweet />
       <ul className="list-group tweets_ul">
-        {db.map((item) => (
-          <div className="tweet_pp_div" key={item.username}>
+        {data.map(item => (
+          <div className="tweet_pp_div" key={item.tweet_text}>
             <img className="tweet_pp" src={img}/>
-            <Tweet username={item.username} tweet={item.tweets} />
+            <Tweet username={item.tweet_id} tweet={item.tweet_text} />
           </div>
-          
         ))}
       </ul>
     </div>
