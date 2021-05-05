@@ -9,6 +9,7 @@
 
 
 .tweet_pp{
+    border-radius: 50%;
     height: 60px;
     width: auto;
     float: left;

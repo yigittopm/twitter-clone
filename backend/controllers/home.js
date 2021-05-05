@@ -1,8 +1,8 @@
 const pool = require("../helpers/database");
 
 const getAllTweets = async (req, res, next) => {
-    const data = await pool.query("SELECT * FROM tweets");
-    res.json(data.rows);
+    const {rows} = await pool.query("SELECT * FROM tweets");
+    res.json(rows);
 }
 
 const getOneTweet = async (req, res, next) => {

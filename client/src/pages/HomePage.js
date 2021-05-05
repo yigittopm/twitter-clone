@@ -2,47 +2,10 @@ import NewTweet from "../components/NewTweet";
 import Tweet from "../components/Tweet";
 import "../styles.css";
 import "../styles/tweets.css";
-import img from "../img/pp.png";
+import img from "../img/anon.png";
 
 import axios from "axios";
 import { useState,useEffect } from "react";
-
-const db = [
-  {
-    username: "merdo",
-    tweets: ["Hello world", "Kim gerldi?"]
-  },
-
-  {
-    username: "buket",
-    tweets: ["Hello world 2", "Kim gerldi? 2"]
-  },
-
-  {
-    username: "anil",
-    tweets: ["Hello world 3", "Kim gerldi? 3"]
-  },
-
-  {
-    username: "anil",
-    tweets: ["Hello world 3", "Kim gerldi? 3"]
-  },
-
-  {
-    username: "anil",
-    tweets: ["Hello world 3", "Kim gerldi? 3"]
-  },
-
-  {
-    username: "anil",
-    tweets: ["Hello world 3", "Kim gerldi? 3"]
-  },
-
-  {
-    username: "anil",
-    tweets: ["Hello world 3", "Kim gerldi? 3"]
-  }
-];
 
 function HomePage() {
   const [data, setData] = useState([]);
