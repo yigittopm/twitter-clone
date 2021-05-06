@@ -13,7 +13,7 @@ export default function App() {
       <div className="container-fuild row mt-3 pl-3">
         <Switch>
           
-          <Route exact path="/register"         component={RegisterPage}/>
+          <Route exact path="/"                 component={RegisterPage}/>
           <PrivateRoute exact path="/private"   component={UserPage} />
           <Route exact path="/login"            component={LoginPage}/>
           <Route path="/*"                      component={NotFound} />
