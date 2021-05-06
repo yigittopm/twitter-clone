@@ -3,7 +3,7 @@
 ## Home
 
 <p>
-	<img src="./project-img/screenshot_tw.png" />
+	<img src="./client/project-img/screenshot_tw.png" />
 </p>
 
 # Getting Started with Create React App
