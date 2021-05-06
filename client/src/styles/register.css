@@ -1,0 +1,29 @@
+.form_container{
+    text-align: justify;
+    margin-top: 8%;
+}
+
+
+.form{
+    width: 20rem;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.form_input{
+    background: #3b3e416d;
+    border: none;
+    height: 80px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.form_input:focus{
+    background: #3b3e416d;
+    background-color:#3b3e416d;;
+}
+
+.btn_color{
+    background: #5edde9;
+}
