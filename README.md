@@ -6,18 +6,15 @@
 	<img src="./client/project-img/screenshot_tw.png" />
 </p>
 
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<hr/>
 
-## Available Scripts
+# Mobile Responsive Twitter
 
-In the project directory, you can run:
+<p float="left">
+	<img src="./client/project-img/home.png"/>
+	<img src="./client/project-img/register.png"/>
+	<img src="./client/project-img/login.png"/>
+	<img src="./client/project-img/notfound.png"/>
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+</p>

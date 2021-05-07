@@ -2,3 +2,11 @@
     text-align: center;
     margin-top: 20%;
 }
+
+@media screen and (max-width:548px) {
+    
+    .found{
+        justify-content: center;
+        margin-top: 70%;
+    }
+}

@@ -18,7 +18,7 @@ export default function LoginPage(){
     return(
         <div className="form_container">
             <form className="form">
-                <h1>LOGIN</h1>
+                <h1 className="form_title">LOGIN</h1>
                 <div className="form-group">
                     <label name="username">Username</label>
                     <input onChange={e => setUsername(e.target.value)} placeHolder="Enter username" className="form-control form_input" name="username" type="text"/>

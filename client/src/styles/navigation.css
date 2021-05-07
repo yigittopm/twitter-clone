@@ -1,3 +1,7 @@
+.ic{
+  display: none;
+}
+
 .navigation {
   margin-left: 30%;
 }
@@ -15,4 +19,31 @@
   .navigation button{
     display: none;
   }
+
+  hr{
+    display: none;
+  }
+
+  .title{
+    display: none;
+  }
+
+  .tw_logo{
+    display: none;
+  }
+
+  .ic{
+    display: inline;
+    margin: 3%;
+  }
+
+  .nav_hr{
+    display: block;
+    background-color: grey;
+  }
+
+  .navigation{
+    margin: auto;
+  }
+
 }

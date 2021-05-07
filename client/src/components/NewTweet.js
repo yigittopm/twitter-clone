@@ -4,7 +4,7 @@ import img from "../img/pp.png";
 export default function NewTweet() {
   return (
     <div className="mb-3 newTweet">
-      <h2>What's your happening ?</h2>
+      <h2 className="new_tweet_title">What's your happening ?</h2>
       <div className="img_input_div">
         <img className="pp" src={img} />
         <input

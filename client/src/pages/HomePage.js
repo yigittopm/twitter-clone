@@ -2,7 +2,7 @@ import NewTweet from "../components/NewTweet";
 import Tweet from "../components/Tweet";
 import "../styles.css";
 import "../styles/tweets.css";
-import img from "../img/anon.png";
+import img from "../img/pp2.png";
 
 import axios from "axios";
 import { useState,useEffect } from "react";

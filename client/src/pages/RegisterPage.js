@@ -22,7 +22,7 @@ export default function RegisterPage({history}){
     return(
         <div className="form_container"> 
             <form className="form">
-                 <h1>REGISTER</h1>
+                <h1 className="form_title">REGISTER</h1>
                 <div className="form-group">
                     <label name="email">Email</label>
                     <input onChange={e => setEmail(e.target.value)} placeHolder="Enter email" className="form-control form_input" name="email" type="email"/>

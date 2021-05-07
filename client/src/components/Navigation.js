@@ -4,38 +4,44 @@ import { Link } from "react-router-dom";
 function Navigation() {
   return (
     <div className="navigation">
-      <i class="fab fa-twitter big"></i>
+      <i class="fab fa-twitter tw_logo"></i>
       <hr />
 
-      <Link to="/">
-        <i class="fas fa-home"></i>
-        <h2>Home</h2>
+      <Link to="/" className="nav_link">
+        <i class="fas fa-home ic fa-lg"></i>
+        <h2 className="title">Home</h2>
       </Link>
 
       <Link to="/discovery">
-        <h2>Discovery</h2>
+        <h2 className="title">Discovery</h2>
+        <i class="fas fa-globe-americas ic fa-lg"></i>
       </Link >
 
       <Link to="/notification">
-        <h2>Notification</h2>
+        <h2 className="title">Notification</h2>
+        <i class="fas fa-bell ic fa-lg"></i>
       </Link >
 
       <Link to="/location">
-        <h2>Location</h2>
+        <h2 className="title">Location</h2>
+        <i class="fas fa-location-arrow ic fa-lg"></i>
       </Link >
 
       <Link to="/lists">
-        <h2>Lists</h2>
+        <h2 className="title">Lists</h2>
+        <i class="fas fa-clipboard-list ic fa-lg"></i>
       </Link >
 
       <Link to="/profile">
-        <h2>Profile</h2>
+        <h2 className="title">Profile</h2>
+        <i class="fas fa-user ic fa-lg"></i>
       </Link>
 
       <Link to="/other">
-        <h2>..Other</h2>
-      </Link >
-
+        <h2 className="title">..Other</h2>
+        <i class="fas fa-cogs ic fa-lg"></i>
+      </Link>
+      <hr className="nav_hr"/>
       <button className="btn tw_btn">Tweetle</button>
     </div>
   );

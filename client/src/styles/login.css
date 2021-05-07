@@ -26,3 +26,13 @@
 .btn_color{
     background: #5edde9;
 }
+
+@media screen and (max-width:548px) {
+        .form{
+            width: 80%;
+        }
+    
+        .form_title{
+            width: 100%;
+        }
+}
