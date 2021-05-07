@@ -1,7 +1,7 @@
 const pool = require("../helpers/database");
 
 const getAllTweets = async (req, res, next) => {
-    const {rows} = await pool.query("SELECT * FROM tweets");
+    const {rows} = await pool.query("SELECT * FROM tweets INNER JOIN users ON tweets.user_id=users.user_id");
     res.json(rows);
 }
 

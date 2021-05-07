@@ -9,3 +9,10 @@
 .navigation button {
   width: 60%;
 }
+
+@media screen and (max-width:548px) {
+  
+  .navigation button{
+    display: none;
+  }
+}

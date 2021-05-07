@@ -15,16 +15,14 @@ function HomePage() {
       .then(result => setData(result.data))
   },[]);
 
-  console.log(data)
-
   return (
     <div className="tweet_div">
       <NewTweet />
       <ul className="list-group tweets_ul">
         {data.map(item => (
           <div className="tweet_pp_div" key={item.tweet_text}>
-            <img className="tweet_pp" src={img}/>
-            <Tweet username={item.tweet_id} tweet={item.tweet_text} />
+            <img className="tweet_pp" src={img} />
+            <Tweet username={item.tweet_id} tweet={item.tweet_text}/>
           </div>
         ))}
       </ul>

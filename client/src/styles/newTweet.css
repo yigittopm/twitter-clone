@@ -28,3 +28,9 @@
 .img_input_div {
   display: flex;
 }
+
+@media screen and (max-width:548px){
+  .newTweet_btn{
+    width: 100%;
+  }
+}

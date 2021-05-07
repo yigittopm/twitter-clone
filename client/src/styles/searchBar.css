@@ -8,3 +8,10 @@
 .search:focus {
   background: #3b3e416d;
 }
+
+
+@media screen and (max-width:548px){
+  .search{
+    display: none;
+  }
+}

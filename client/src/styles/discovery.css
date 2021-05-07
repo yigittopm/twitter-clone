@@ -1,7 +1,14 @@
 .disc a p {
-  font-size: 22px;
+  font-size: 1em;
   color: grey;
 }
 .disc a {
+  font-size: 1em;
   text-decoration: none;
+}
+
+@media screen and (max-width:548px){
+  .disc{
+    display: none;
+  }
 }
