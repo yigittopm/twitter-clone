@@ -2,7 +2,7 @@ import "../styles/login.css";
 import { useState, useEffect} from "react";
 import axios from "axios";
 
-export default function LoginPage(){
+export default function LoginPage({history}){
 
     const[username, setUsername] = useState("");
     const[password, setPassword] = useState("");
@@ -13,6 +13,8 @@ export default function LoginPage(){
         const data = { username, password};
         axios.post("http://localhost:5000/login", data)
             .then((result) => console.log(result));
+        
+        history.push("/");
     }
 
     return(

@@ -6,7 +6,7 @@ function Navigation() {
     <div className="navigation">
       <i class="fab fa-twitter tw_logo"></i>
       <hr />
-
+      <div className="icon_div">
       <Link to="/" className="nav_link">
         <i class="fas fa-home ic fa-lg"></i>
         <h2 className="title">Home</h2>
@@ -42,6 +42,7 @@ function Navigation() {
         <i class="fas fa-cogs ic fa-lg"></i>
       </Link>
       <hr className="nav_hr"/>
+      </div>
       <button className="btn tw_btn">Tweetle</button>
     </div>
   );
