@@ -1,6 +1,7 @@
 import "../styles/register.css";
 import { useState, useEffect} from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function RegisterPage({history}){
 
@@ -36,6 +37,7 @@ export default function RegisterPage({history}){
                     <input onChange={e => setPassword(e.target.value)} placeHolder="Enter password" className="form-control form_input" name="password" type="password"/>
                 </div>
                 <button onClick={submitForm} className="btn tw_btn">Register</button>
+                <Link to="/login"><button className="btn tw_btn mt-2">Login Page</button></Link>
             </form>
         </div>
     )
